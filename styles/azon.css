@@ -125,6 +125,16 @@ body::-webkit-scrollbar-thumb:hover {
 .scrollbar::-webkit-scrollbar-thumb:hover { 
     background-color: hsl(0, 0%, 80%);
 }
+.title { 
+    color: var(--modern-black);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-500);
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--cultured-white);
+}
 
 .overlay { 
     position: fixed;
@@ -827,4 +837,72 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: var(--fs-7);
     font-weight: var(--fw-600);
     color: var(--davys-gray);
+}
+
+.product-minimal { 
+    margin-bottom: 30px;
+}
+.product-minimal .product-showcase { 
+    margin-bottom: 10px;
+}
+.product-minimal .showcase-wrapper { 
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+}
+.product-minimal .showcase-container { 
+    min-width: 100%;
+    padding: 0 5px;
+    scroll-snap-align: start;
+}
+.product-minimal .showcase { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid var(--cultured-white);
+    padding: 15px;
+    border-radius: var(--br-md);
+}
+.product-minimal .showcase:not(:last-child) { 
+    margin-bottom: 15px;
+}
+.product-minimal .showcase-contents {
+    width: calc(100% - 85px);
+}
+.product-minimal .showcase-title { 
+    color: var(--modern-black);
+    font-size: var(--fs-7);
+    font-weight: var(--fw-600);
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 2px;
+}
+.product-minimal .showcase-category { 
+    width: max-content;
+    color: var(--davys-gray);
+    font-size: var(--fs-8);
+    text-transform: capitalize;
+    margin-bottom: 3px;
+}
+.product-minimal .showcase-category:hover { 
+    color: var(--salmon-pink);
+}
+.product-minimal .price-box { 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.product-minimal .price { 
+    font-size: var(--fs-7);
+    font-weight: var(--fw-700);
+    color: var(--salmon-pink);
+}
+.product-minimal .price-box del { 
+    font-size: var(--fs-9);
+    color: var(--sonic-silver);
 }
