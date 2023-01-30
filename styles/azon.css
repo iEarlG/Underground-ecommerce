@@ -81,7 +81,6 @@ input::placeholder {
 
 body { 
     background-color: var(--white);
-    padding-bottom: 60px;
 }
 
 body::-webkit-scrollbar { 
@@ -1384,13 +1383,13 @@ footer {
     transition: var(--ts-t);
 }
 .footer-category-link:hover { 
-    color: var(--spanish-gray);
+    color: var(--salmon-pink);
 }
 .footer-category-link:not(:last-child)::after { 
     position: absolute;
     content: '';
     top: 3px; right: -10px;
-    background-color: var(--modern-black);
+    background-color: var(--salmon-pink);
     width: 1px;
     height: 15px;
 }
@@ -1417,4 +1416,63 @@ footer {
     height: 1px;
     bottom: 0; left: 0;
     background-color: var(--salmon-pink);
+}
+.footer-nav-items { 
+    padding: 3px 0;
+}
+.footer-nav-links, .footer-nav-items .contents { 
+    width: max-content;
+    color: var(--sonic-silver);
+    font-size: var(--fs-7);
+    text-transform: capitalize;
+    transition: var(--ts-t);
+}
+.footer-nav-links:hover { 
+    color: var(--salmon-pink)
+}
+.footer-nav-items.flex { 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-nav-items .contents { 
+    font-style: normal;
+    margin-bottom: 5px;
+}
+.footer-nav-items .icon-box { 
+    font-size: 25px;
+    color: var(--sonic-silver);
+}
+.footer-nav-items .icon-box ion-icon { 
+    --ionicon-stroke-width: 30px;
+}
+.footer-nav .social-link { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.social-link .footer-nav-links { 
+    font-size: 25px;
+}
+.footer-bottom { 
+    margin-bottom: 50px;
+    text-align: center;
+}
+.payment-img { 
+    max-width: 335px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.copyright { 
+    color: var(--sonic-silver);
+    font-size: var(--fs-8);
+    font-weight: var(--fw-500);
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+}
+.copyright a { 
+    display: inline;
+    color: var(--salmon-pink);
 }
